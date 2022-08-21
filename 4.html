@@ -44,7 +44,21 @@
     },
   ];
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  const photo = products.filter(function (product) {
+   return 'photos' in product && product.photos.length > 0;
+  });
+  console.log(photo);
+
+  products.sort(function (produc, prod) {
+    if (produc.price > prod.price) {
+      return 1;
+    }
+    if (produc.price < prod.price) {
+      return -1;
+    }
+    return 0;
+  });
+  console.log(products)
 </script>
 </body>
 </html>
