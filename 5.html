@@ -3,107 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Homework</title>
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=M1JU3Ph246HPiPgf6Nh0hxJ5VnojKoUYdMufEkLhyUD4_ZecDdg3YOYbzm1tVX_ZcplqyhE7iUc06vWIxYtvzdCF59JW9RsSjxCji-HWZy788fCTzRe5t4qatgrRovSGhzlXwmvQubHa8sd1b6TF8uM1clb70k962Z22SXQlNEbR40kw30wIv6yHyfw6xc4N7JnowWSQzgCfT5oBcKAQ5nz7kwjy8-GRNFWE8lSbCCxWfK9TO-iIA8jsKqxiRky42qOs1vqEMWFDEev3ng27LbRfRZSkPt3BAbqHAHUJjyDgT07g8qKl6Up7Dva5he53YcZyPCLkOyQ6ILU0pEPGmn2yiWf7w1tPqcaLdUY-IthNGEBqzcEY0PmkOblHLqYH7dpQ2EzfvCsieYUvmI5r3sLRCdWPgxzpRrBlN8JNbPnHDxHSsDHXHLZjIhjWe2bM1ScND0r0cH-tPVvnhEUIKeBYV5QHhq1_DDqLmpLd_O6Hk_YKO6QPPANI-mL5ny0ZPEJ_a0CXUMUD7raIh5GxqSTQAH0CgoOoELGUudV_kW-NnEqfBvJTyZ-GiNK7GOtOd5q_Zlaeab7O2vtMZN4_pUqOtr4RPMc9pTMkP_Kxz-0gksJAmpbxvqx-2MjPu72TWVdZ4_Sl47lk8NGG6u2FYqfBMgMkbt6_LYsXL-PeUbXyJcmx1yye0SqfwjCOR5DcKH3kXLC3NOsAJxZGqddl8E7_wHk1RIzXo73Wh8Ga8ksBk0sYAaQERPrjWUBiQil_9j7_owonySIj7Qu3SkzYJJPfc0vDzTCMDUUyy9MtiT0jTHBfP5TDpzWGkp1770NryWdo39i4aNkkylMx-3jWLoCcuuuwUOBAgv7dxyEkJrEEEZ20p19JoTDFSMp8c9mJdaxW5pztQYLOYlB6v8Lupf96mZEqebFSXVNI5GZar56HSOl63n-gGsfiXk5K02CGbh1529f9LuodyMwBRJH8yayzXVaZHTm3tlOC4IFRP-rtt3gBpcOt82w3mRAGo-DJ8G-M7Xx-sjkymbbZN3h7pzBG0cGOu6mrbH2zGVpprDUzirsVAWVgIj9A3Bxkxl5NIAf-ZZoTVeRX34SWdeKAYQsk5hIQ8Ajbv44EzZM95mlyhhtPy4AIa0Rn6i9ZqvCMCDVwjIlSlQTllbygNnhbnEqd3jVVQfWDsw7llgf7JGI" charset="UTF-8"></script></head>
+</head>
 <body>
 <!--
-Обязательное задание.
+Необязательное задание.
 
-Необходимо скопировать и вставить в данный скрипт все функции из 4 задания.
-Необходимо реализовать функцию:
-mathOperation(arg1, arg2, operation);
-Параметры:
-arg1 - первое число.
-arg2 - второе число.
-operation - строка, которая содержит один символ из: "+", "-", "*", "/".
-Функция mathOperation должна вернуть результат операции, который был передан в
-параметр operation для двух первых аргументов (arg1 и arg2).
-Функция mathOperation должна использовать для вычисления функции из 4 задания.
+Вывести с помощью цикла for числа от 0 до 9, НЕ используя тело цикла. То есть
+выглядеть должно примерно так:
 
-Примеры вызова функции:
-console.log(mathOperation(5, 3, "+")); // 8
-console.log(mathOperation(5, 3, ":)")); // NaN
+for(…){/* здесь пусто */}
 
-Функции mathOperation всегда передаются корректные числа, проверки на NaN,
-Infinity делать не нужно, однако, в случае если был передан некорректный
-аргумент в параметр operation, необходимо вернуть NaN.
-
-Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
+Вместо многоточия нужно записать нужные разделы.
+Помните, что в первом, втором и третьем раздела цикла можно не только писать
+условия или увеличивать счетчик, в этих разделах допустимы любые выражения,
+например вызовы функций.
 -->
 <script>
   "use strict";
 
-  /**
-   * Функция складывает два переданных числа.
-   * @param {number} a Первое число, которое будет складываться в функции.
-   * @param {number} b Второе число, которое будет складываться в функции.
-   * @returns {number} Вернет число, получившееся в результате суммы двух чисел.
-   */
-  function sum(a, b) {
-    return a + b;
-  }
-
-  /**
-   * Функция отнимает от большего числа меньшее.
-   * @param {number} a Первое число.
-   * @param {number} b Второе число.
-   * @returns {number} Вернет разность двух чисел.
-   */
-  function dif(a, b) {
-    if(a < b){
-      return b - a;
-    }else if(a > b){
-      return a - b;
-    }else if(a === b){
-      return 0;
-    }
-  }
-
-  /**
-   * Функция умнажает два переданных числа.
-   * @param {number} a Первое число.
-   * @param {number} b Второе число.
-   * @returns {number} Вернет число, получившееся в результате перемножения двух чисел.
-   */
-  function mul(a, b) {
-    return a * b;
-  }
-
-  /**
-   * Функция делит два переданных числа
-   * @param {number} a Первое число.
-   * @param {number} b Второе число.
-   * @returns {number} Вернет число, получившееся в результате деления двух чисел.
-   */
-  function div(a, b) {
-    return a / b;
-  }
-
-  /**
-   * Функция вычисляет, результат в зависимости от операции,
-   * указанной в третьем аргументе
-   * @param {number} arg1 Первое число.
-   * @param {number} arg2 Второе число.
-   * @param {string} operation операция над аргументами (+-*\/
-   * @returns {number|NaN}
-   */
-  function mathOperation(arg1, arg2, operation) {
-    if(operation === '*'){
-      return mul(arg1, arg2);
-    }
-    if (operation === '+'){
-      return sum(arg1, arg2);
-    }
-    if (operation === '-'){
-      return dif(arg1, arg2)
-    }
-    if (operation === '/'){
-      return div(arg1, arg2);
-    }
-    return NaN
-  }
-  
-  console.log(mathOperation(4, 6, '7'));
-  console.log(mathOperation(5, 3, "+"));
+  // Здесь пишем решение, данный комментарий необходимо стереть.
 </script>
 </body>
 </html>
